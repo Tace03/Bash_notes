@@ -54,7 +54,13 @@ $REPLY means everything put in the read command, or shall we say readline
 ```
 echo $1 $2 $3
 args = ("$@")
+
 echo {args[1]} {args[2]} {args[3]}
+echo $@
+#these two work the same way
+
+echo $#
+#print out the number of input arguments
 ```
 Print out a list of arguments from the input
 
