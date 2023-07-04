@@ -64,6 +64,12 @@ echo $#
 ```
 Print out a list of arguments from the input
 
+```
+cat > file
+(Input something)
+```
+Put some data into file
+
 **3) More complex structure**
 
 ```
@@ -77,7 +83,7 @@ fi                  #finish if
 ```
 Basic structure of if else
 
-**4) Flags**
+**4) Flags/Operators**
 ```
 #comparison flags
 ## Integer
@@ -95,6 +101,25 @@ Basic structure of if else
 <   : less than in ASCII
 >   : more than in ASCII
 -x  : string is null
+```
+List of Comparison flags
+```
+echo -e "Enter the name of file: \c" #
+# \c means to keep cursor on same line, -e allows the action to be done
+# no -e means no \c applied
+
+if [ -f $filename ]                   # if the file exists : -f
+then
+  echo "$filename found"
+else
+  echo "$filename not found"
+fi
+
+if [ -d $dirname]                     # if the directory exists: -d
+if [ -s $filename]                    # if the file empty or not: -s
+if [ -r $filename]                    # if the file has read permission: -r
+if [ -w $filename]                    # if the file has write permission: -w
+if [ -x $filename]                    # if the file has exe permission: -x 
 ```
 
 
