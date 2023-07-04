@@ -27,5 +27,8 @@ chmod u+x hello.sh
 ```
 Allow the file to be executable
 
-
+```
+#this is a comment
+```
+That is a comment
 
