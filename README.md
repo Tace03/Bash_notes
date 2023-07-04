@@ -44,3 +44,9 @@ read -a names
 echo "Names: $names[0] $names[1]"
 ```
 Read an array of "names", print out names[index]
+
+```
+read
+echo "Output: $REPLY"
+```
+$REPLY means everything put in the read command, or shall we say readline
