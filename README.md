@@ -34,7 +34,9 @@ That is a comment
 
 ```
 read -p "Name:" name
+read -sp "password: " password
+echo "password:" $password
 ```
-This command reads input into name variable
+This command reads input into name variable, -p for same line, -sp for silent display
 
 
