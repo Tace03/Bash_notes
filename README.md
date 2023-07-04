@@ -22,7 +22,10 @@ Delete the previous session
 touch hello.sh
 ```
 Create bash file named hello.sh
-
+```
+chmod u+x hello.sh
+```
+Allow the file to be executable
 
 
 
