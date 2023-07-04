@@ -64,3 +64,18 @@ echo $#
 ```
 Print out a list of arguments from the input
 
+**3) More complex structure**
+
+```
+count = 10
+if [$count -eq 9]      #if the condition is satisfied
+then                #do below statement
+  echo "Condition is true"
+else
+  echo "Condition is false"
+fi                  #finish if
+```
+
+
+
+
