@@ -39,4 +39,8 @@ echo "password:" $password
 ```
 This command reads input into name variable, -p for same line, -sp for silent display
 
-
+```
+read -a names
+echo "Names: $names[0] $names[1]"
+```
+Read an array of "names", print out names[index]
