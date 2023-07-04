@@ -75,7 +75,27 @@ else
   echo "Condition is false"
 fi                  #finish if
 ```
+Basic structure of if else
 
+**4) Flags**
+```
+#comparison flags
+## Integer
+-eq : is equal to
+-ne : not equal to
+-gt : is greater than
+-ge : is greather than or equal to
+-lt : is less then
+-le : is less than or equal to
+
+## String
+=   : is equal to
+==  : is equal to
+!=  : is not equal to
+<   : less than in ASCII
+>   : more than in ASCII
+-x  : string is null
+```
 
 
 
