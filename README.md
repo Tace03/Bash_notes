@@ -69,6 +69,24 @@ cat > file
 (Input something)
 ```
 Put some data into file
+```
+echo -e "Enter filename: \c"
+read filename
+
+if [ -f $filename ]
+then
+  if [ -w $filename]
+  then
+      echo "Type some data, ctrl + d to escape"
+      cat >> $file_name
+  else
+      echo "The file does not allow write permission."
+  fi
+else
+  echo "File not existed."
+fi 
+```
+Append output to txt files
 
 **3) More complex structure**
 
@@ -124,23 +142,29 @@ if [ -x $filename]                    # if the file has exe permission: -x
 File operators flags
 
 ```
-echo -e "Enter filename: \c"
-read filename
-
-if [ -f $filename ]
-then
-  if [ -w $filename]
-  then
-      echo "Type some data, ctrl + d to escape"
-      cat >> $file_name
-  else
-      echo "The file does not allow write permission."
-  fi
-else
-  echo "File not existed."
-fi 
+&&  #AND operator
+||  #OR  operator
 ```
-Append output to txt files
+AND , OR operator
+
+```
+num1 = 5
+num2 = 10
+
+echo $((num1 + num2))  #plus arith
+echo $((num1 - num2))  #minus arith
+echo $((num1 * num2))  #multi arith
+echo $((num1 / num2))  #div arith
+echo $((num1 % num2))  #mod arith
+
+echo $(expr $num1 + $num2)  #plus arith
+echo $(expr $num1 - $num2)  #minus arith
+echo $(expr $num1 \* $num2)  #multi arith, notice backlash
+echo $(expr $num1 / $num2)  #div arith
+echo $(expr $num1 % $num2)  #mod arith
+```
+Arithmetic operations
+
 
 
 
