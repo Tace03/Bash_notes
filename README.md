@@ -33,7 +33,7 @@ Allow the file to be executable
 That is a comment
 
 ```
-read name
+read -p "Name:" name
 ```
 This command reads input into name variable
 
