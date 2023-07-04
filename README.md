@@ -121,6 +121,32 @@ if [ -r $filename]                    # if the file has read permission: -r
 if [ -w $filename]                    # if the file has write permission: -w
 if [ -x $filename]                    # if the file has exe permission: -x 
 ```
+File operators flags
+
+```
+echo -e "Enter filename: \c"
+read filename
+
+if [ -f $filename ]
+then
+  if [ -w $filename]
+  then
+      echo "Type some data, ctrl + d to escape"
+      cat >> $file_name
+  else
+      echo "The file does not allow write permission."
+  fi
+else
+  echo "File not existed."
+fi 
+```
+Append output to txt files
+
+
+
+
+
+
 
 
 
