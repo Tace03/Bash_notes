@@ -14,6 +14,14 @@ List out available bash versions (?)
 which bash
 ```
 Give out which is bash
+```
+clear
+```
+Delete the previous session
+```
+touch hello.sh
+```
+Create bash file named hello.sh
 
 
 
